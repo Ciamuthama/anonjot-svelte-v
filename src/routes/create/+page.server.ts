@@ -1,3 +1,6 @@
-export function GET() {
-    return new Response('hello from the server ')
+export const load =()=>{
+    const title = 'im the title'
+    return {
+        title
+    }
 }
