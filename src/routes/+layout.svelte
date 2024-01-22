@@ -4,8 +4,8 @@
 	</script>
 
 <div class="app">
-	<Header />
 	<main>
+		<Header />
 		<slot />
 	</main>
 </div>

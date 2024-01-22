@@ -14,5 +14,5 @@ module.exports = {
   variants: {
     extend: {},
   },
-  plugins: [require('svelte-ux/plugins/tailwind.cjs')],
+  plugins: [require('svelte-ux/plugins/tailwind.cjs'),require('daisyui')],
 };
