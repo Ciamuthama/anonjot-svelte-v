@@ -1,7 +1,18 @@
 <script lang="ts">
+	export let data;
+	import {Card} from 'svelte-ux'
 	
-	export let data
 	
 </script>
 
-<h2>{data.test}</h2>
+<main>
+	<div class="grid grid-cols-2 m-2 gap-2">
+		{#each data.notes as item}
+			<a href="/details/${item._id}">
+				<Card title={item.title} class='bg-cyan-300 p-2'>
+				<p slot="contents">{item.body}</p>
+			</Card>
+		</a>
+		{/each}
+	</div>
+</main>
