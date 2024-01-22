@@ -1,10 +1,9 @@
 export async function load({ fetch }) {
 try {
-    const response = await fetch('https://anonjotapi.vercel.app/notes')
+    const response = await fetch('https://anonjotapi.vercel.app/notes',{
+        method: 'GET',
+    })
     const notes = await response.json()
-    console.log(notes);
-
-    
     return{
         notes
     }
